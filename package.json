@@ -39,6 +39,7 @@
     "bs5-lightbox": "^1.7.11",
     "chart.js": "^3.8.0",
     "countdown-updated": "^2.7.0",
+    "firebase": "^9.9.3",
     "matchmedia-polyfill": "^0.3.2",
     "swiper": "^7.4.1",
     "tippy.js": "^6.3.7"
