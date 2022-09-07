@@ -756,7 +756,7 @@
                   class="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-display leading-none text-jacarta-700 dark:text-white"
                   data-tippy-content="Copy"
                 >
-                  <span class="max-w-[10rem] overflow-hidden text-ellipsis"
+                  <span id="account-string" class="max-w-[10rem] overflow-hidden text-ellipsis"
                     >0x7a86c0b064171007716bbd6af96676935799a63e</span
                   >
                   <svg
@@ -1287,11 +1287,14 @@
                 </div>
 
                 <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#placeBidModal"
+                  id="btn-connect"
                   class="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
-                  >Buy Now</a
+                  >Connect Wallet</a
+                >
+                <a
+                  id="btn-mint"
+                  class="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+                  >Mint</a
                 >
               </div>
               <!-- end bid -->
@@ -2325,14 +2328,14 @@
                       </div>
 
                       <div class="mt-8 flex items-center justify-between">
-                        <button
+                        <!-- <button
                           type="button"
                           class="font-display text-sm font-semibold text-accent"
                           data-bs-toggle="modal"
                           data-bs-target="#placeBidModal"
                         >
                           Buy Now
-                        </button>
+                        </button> -->
 
                         <a
                         type="button"
@@ -2727,6 +2730,7 @@
                           class="font-display text-sm font-semibold text-accent"
                           data-bs-toggle="modal"
                           data-bs-target="#placeBidModal"
+                          onclick="click"
                         >
                         Connect Wallet
                         </button>
@@ -3437,5 +3441,12 @@
     <script src="./js/countdown.bundle.js"></script>
     <script src="./js/app.bundle.js"></script>
     <script src="./js/charts.bundle.js"></script>
+    
+    <script type="text/javascript" src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+    <script src="./js/web3login.js"></script>
   </body>
 </html>
