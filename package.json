@@ -42,7 +42,8 @@
     "firebase": "^9.9.3",
     "matchmedia-polyfill": "^0.3.2",
     "swiper": "^7.4.1",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "web3modal": "^1.9.9"
   },
   "browserslist": [
     "defaults",

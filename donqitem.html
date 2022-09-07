@@ -170,7 +170,7 @@
                  aria-expanded="false"
                  role="button"
                  data-bs-toggle="dropdown"
-                 >Pages
+                 >Features
                  <i class="lg:hidden">
                    <svg
                      xmlns="http://www.w3.org/2000/svg"
@@ -728,129 +728,128 @@
  
            <!-- Profile -->
            <div class="js-nav-dropdown group-dropdown relative">
-             <button
-               class="dropdown-toggle group ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-transparent bg-white/[.15] transition-colors hover:bg-accent focus:bg-accent"
-               id="profileDropdown"
-               aria-expanded="false"
-               data-bs-toggle="dropdown"
-               aria-label="profile"
-             >
-               <svg
-                 xmlns="http://www.w3.org/2000/svg"
-                 viewBox="0 0 24 24"
-                 width="24"
-                 height="24"
-                 class="h-4 w-4 fill-white transition-colors group-hover:fill-white group-focus:fill-white"
-               >
-                 <path fill="none" d="M0 0h24v24H0z" />
-                 <path
-                   d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"
-                 />
-               </svg>
-             </button>
-             <div
-               class="dropdown-menu !-right-4 !top-[85%] !left-auto z-10 hidden min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full group-dropdown-hover:visible group-dropdown-hover:opacity-100 dark:bg-jacarta-800 lg:invisible lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl"
-               aria-labelledby="profileDropdown"
-             >
-               <button
-                 class="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-display leading-none text-jacarta-700 dark:text-white"
-                 data-tippy-content="Copy"
-               >
-                 <span class="max-w-[10rem] overflow-hidden text-ellipsis"
-                   >0x7a86c0b064171007716bbd6af96676935799a63e</span
-                 >
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   width="24"
-                   height="24"
-                   class="ml-1 mb-px h-4 w-4 fill-jacarta-500 dark:fill-jacarta-300"
-                 >
-                   <path fill="none" d="M0 0h24v24H0z" />
-                   <path
-                     d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zM4.003 9L4 20h11V9H4.003z"
-                   />
-                 </svg>
-               </button>
- 
-               <div class="mx-5 mb-6 rounded-lg border border-jacarta-100 p-4 dark:border-jacarta-600">
-                 <span class="text-sm font-medium tracking-tight dark:text-jacarta-200">Balance</span>
-                 <div class="flex items-center">
-                   <svg
-                     version="1.1"
-                     xmlns="http://www.w3.org/2000/svg"
-                     x="0"
-                     y="0"
-                     viewBox="0 0 1920 1920"
-                     xml:space="preserve"
-                     class="-ml-1 mr-1 h-[1.125rem] w-[1.125rem]"
-                   >
-                     <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
-                     <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
-                     <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
-                     <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
-                     <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
-                   </svg>
-                   <span class="text-lg font-bold text-green">10 ETH</span>
-                 </div>
-               </div>
-               <a
-                 href="user.html"
-                 class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
-               >
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   width="24"
-                   height="24"
-                   class="h-4 w-4 fill-jacarta-700 transition-colors dark:fill-white"
-                 >
-                   <path fill="none" d="M0 0h24v24H0z"></path>
-                   <path
-                     d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"
-                   ></path>
-                 </svg>
-                 <span class="mt-1 font-display text-sm text-jacarta-700 dark:text-white">My Profile</span>
-               </a>
-               <a
-                 href="edit-profile.html"
-                 class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
-               >
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   width="24"
-                   height="24"
-                   class="h-4 w-4 fill-jacarta-700 transition-colors dark:fill-white"
-                 >
-                   <path fill="none" d="M0 0h24v24H0z" />
-                   <path
-                     d="M9.954 2.21a9.99 9.99 0 0 1 4.091-.002A3.993 3.993 0 0 0 16 5.07a3.993 3.993 0 0 0 3.457.261A9.99 9.99 0 0 1 21.5 8.876 3.993 3.993 0 0 0 20 12c0 1.264.586 2.391 1.502 3.124a10.043 10.043 0 0 1-2.046 3.543 3.993 3.993 0 0 0-3.456.261 3.993 3.993 0 0 0-1.954 2.86 9.99 9.99 0 0 1-4.091.004A3.993 3.993 0 0 0 8 18.927a3.993 3.993 0 0 0-3.457-.26A9.99 9.99 0 0 1 2.5 15.121 3.993 3.993 0 0 0 4 11.999a3.993 3.993 0 0 0-1.502-3.124 10.043 10.043 0 0 1 2.046-3.543A3.993 3.993 0 0 0 8 5.071a3.993 3.993 0 0 0 1.954-2.86zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                   />
-                 </svg>
-                 <span class="mt-1 font-display text-sm text-jacarta-700 dark:text-white">Edit Profile</span>
-               </a>
-               <a
-                 href="#"
-                 class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
-               >
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   width="24"
-                   height="24"
-                   class="h-4 w-4 fill-jacarta-700 transition-colors dark:fill-white"
-                 >
-                   <path fill="none" d="M0 0h24v24H0z" />
-                   <path
-                     d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z"
-                   />
-                 </svg>
-                 <span class="mt-1 font-display text-sm text-jacarta-700 dark:text-white">Sign out</span>
-               </a>
-             </div>
-           </div>
- 
+            <button
+              class="dropdown-toggle group ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-transparent bg-white/[.15] transition-colors hover:bg-accent focus:bg-accent"
+              id="profileDropdown"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="h-4 w-4 fill-white transition-colors group-hover:fill-white group-focus:fill-white"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu !-right-4 !top-[85%] !left-auto z-10 hidden min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full group-dropdown-hover:visible group-dropdown-hover:opacity-100 dark:bg-jacarta-800 lg:invisible lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl"
+              aria-labelledby="profileDropdown"
+            >
+              <button
+                class="js-copy-clipboard my-4 flex select-none items-center whitespace-nowrap px-5 font-display leading-none text-jacarta-700 dark:text-white"
+                data-tippy-content="Copy"
+              >
+                <span class="max-w-[10rem] overflow-hidden text-ellipsis"
+                  >User Name</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="ml-1 mb-px h-4 w-4 fill-jacarta-500 dark:fill-jacarta-300"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zM4.003 9L4 20h11V9H4.003z"
+                  />
+                </svg>
+              </button>
+  
+              <!-- <div class="mx-5 mb-6 rounded-lg border border-jacarta-100 p-4 dark:border-jacarta-600">
+                <span class="text-sm font-medium tracking-tight dark:text-jacarta-200">Balance</span>
+                <div class="flex items-center">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 1920 1920"
+                    xml:space="preserve"
+                    class="-ml-1 mr-1 h-[1.125rem] w-[1.125rem]"
+                  >
+                    <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                    <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                    <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                    <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                    <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+                  </svg>
+                  <span class="text-lg font-bold text-green">10 ETH</span>
+                </div>
+              </div> -->
+              <a
+                href="user.html"
+                class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="h-4 w-4 fill-jacarta-700 transition-colors dark:fill-white"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"
+                  ></path>
+                </svg>
+                <span class="mt-1 font-display text-sm text-jacarta-700 dark:text-white">My Profile</span>
+              </a>
+              <a
+                href="login.html"
+                class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="h-4 w-4 fill-jacarta-700 transition-colors dark:fill-white"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M9.954 2.21a9.99 9.99 0 0 1 4.091-.002A3.993 3.993 0 0 0 16 5.07a3.993 3.993 0 0 0 3.457.261A9.99 9.99 0 0 1 21.5 8.876 3.993 3.993 0 0 0 20 12c0 1.264.586 2.391 1.502 3.124a10.043 10.043 0 0 1-2.046 3.543 3.993 3.993 0 0 0-3.456.261 3.993 3.993 0 0 0-1.954 2.86 9.99 9.99 0 0 1-4.091.004A3.993 3.993 0 0 0 8 18.927a3.993 3.993 0 0 0-3.457-.26A9.99 9.99 0 0 1 2.5 15.121 3.993 3.993 0 0 0 4 11.999a3.993 3.993 0 0 0-1.502-3.124 10.043 10.043 0 0 1 2.046-3.543A3.993 3.993 0 0 0 8 5.071a3.993 3.993 0 0 0 1.954-2.86zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                <span class="mt-1 font-display text-sm text-jacarta-700 dark:text-white">Login</span>
+              </a>
+              <a
+                href="#"
+                class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="h-4 w-4 fill-jacarta-700 transition-colors dark:fill-white"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z"
+                  />
+                </svg>
+                <span class="mt-1 font-display text-sm text-jacarta-700 dark:text-white">Sign out</span>
+              </a>
+            </div>
+          </div>
            <!-- Dark Mode -->
            <a
              href="#"
@@ -1291,7 +1290,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#placeBidModal"
                   class="inline-block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
-                  >Buy Now</a
+                  >Connect Wallet</a
                 >
               </div>
               <!-- end bid -->
@@ -2301,7 +2300,7 @@
                       <div class="mt-4 flex items-center justify-between">
                         <a href="item.html">
                           <span class="font-display text-base text-jacarta-700 hover:text-accent dark:text-white"
-                            >Zip - Gold </span
+                            >Zip - Regular </span
                           >
                         </a>
                         <span
@@ -2331,10 +2330,13 @@
                         </span>
                       </div>
                       <div class="mt-2 text-sm">
-                        <span class="dark:text-jacarta-300">OWNERSHIP PER TOKEN - 250</span>
-                        <span class="text-jacarta-700 dark:text-jacarta-100">Access to exclusive drops</span>
+                        <span class="dark:text-jacarta-300">0.02222% - 250</span>
                         <br>
-                        <span class="text-jacarta-700 dark:text-jacarta-100">Access to exclusive Don Q's Discord</span>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to exclusive drops</span>
+                        <br>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to exclusive Don Q's Discord</span>
+                        <br>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - 0.02222% Ownership to the single Bottom Line</span>
 
                       </div>
 
@@ -2345,8 +2347,24 @@
                           data-bs-toggle="modal"
                           data-bs-target="#placeBidModal"
                         >
-                          Buy Now
+                         More Info
                         </button>
+
+                        <a
+                        type="button"
+                        class="font-display text-sm font-semibold text-accent"
+                        href="https://checkout.square.site/merchant/MLTH37F66A8B2/checkout/3IMT5I5AICQJ2Y7ETJKLCXF4"
+                      >
+                        Pay with Card
+                      </a>
+
+                      <a
+                      type="button"
+                      class="font-display text-sm font-semibold text-accent"
+                      href="developer-office-hours/client/index.html"
+                    >
+                      Pay with Crypto
+                    </a>
 
                         <div class="flex items-center space-x-1">
                           <span
@@ -2380,7 +2398,7 @@
                       <figure>
                         <a href="item.html">
                           <img
-                            src="./img/collections/dongqgif.gif"
+                            src="./img/collections/dongold.gif"
                             alt="item 2"
                             width="230"
                             height="230"
@@ -2392,7 +2410,7 @@
                       <div class="mt-4 flex items-center justify-between">
                         <a href="item.html">
                           <span class="font-display text-base text-jacarta-700 hover:text-accent dark:text-white"
-                            >Half Pound - Diamond</span
+                            >Half Pound - Gold</span
                           >
                         </a>
                         <span
@@ -2424,11 +2442,14 @@
                       <div class="mt-2 text-sm">
                         <span class="dark:text-jacarta-300">OWNERSHIP PER TOKEN - 250</span>
                         <br>
-                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to everything in Gold</span>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to everything in Zip</span>
                         <br>
                         <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to exclusive signed merch </span>
                         <br>
                         <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to exclusive content with recording sessions, vlogs, and more</span>
+
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - 0.047% Ownership to the single Bottom Line</span>
+
 
 
                       </div>
@@ -2440,8 +2461,24 @@
                           data-bs-toggle="modal"
                           data-bs-target="#placeBidModal"
                         >
-                          Buy Now
+                          More Info
                         </button>
+
+                        <a
+                        type="button"
+                        class="font-display text-sm font-semibold text-accent"
+                        href="developer-office-hours/client/index.html"
+                      >
+                        Pay with Card
+                      </a>
+
+                      <a
+                      type="button"
+                      class="font-display text-sm font-semibold text-accent"
+                      href="developer-office-hours/client/index.html"
+                    >
+                      Pay with Crypto
+                    </a>
                         <div class="flex items-center space-x-1">
                           <span
                             class="js-likes relative cursor-pointer before:absolute before:h-4 before:w-4 before:bg-[url('../img/heart-fill.svg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-0"
@@ -2648,8 +2685,7 @@
                       <figure class="relative">
                         <a href="item.html">
                           <img
-                            src="./img/collections/dongqgif.gif"
-                            data-src="./img/collections/dongqgif.gif"
+                            src="./img/collections/donblue.gif"
                             alt="item 3"
                             width="230"
                             height="230"
@@ -2661,7 +2697,7 @@
                       <div class="mt-4 flex items-center justify-between">
                         <a href="item.html">
                           <span class="font-display text-base text-jacarta-700 hover:text-accent dark:text-white"
-                            >Pound - Platiumn</span
+                            >Pound - Sapphire</span
                           >
                         </a>
                         <span
@@ -2693,11 +2729,12 @@
                       <div class="mt-2 text-sm">
                         <span class="dark:text-jacarta-300">Ownership Tokens - 3</span>
                         <br>
-                        <span class="text-jacarta-700 dark:text-jacarta-100"> Access to everything in Half Pound</span>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to everything in Half Pound</span>
                         <br>
-                        <span class="text-jacarta-700 dark:text-jacarta-100"> Access to autographed Merch</span>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to autographed merch</span>
                         <br>
-                        <span class="text-jacarta-700 dark:text-jacarta-100"> *Access to recording and writing session with Don Q </span>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - Access to virtual recording and writing session with Don Q </span>
+                        <span class="text-jacarta-700 dark:text-jacarta-100"> - 0.0600% Ownership to the single Bottom Line</span>
 
                       </div>
 
@@ -2708,8 +2745,23 @@
                           data-bs-toggle="modal"
                           data-bs-target="#placeBidModal"
                         >
-                        Buy Now
+                        More Info 
                         </button>
+                        <a
+                        type="button"
+                        class="font-display text-sm font-semibold text-accent"
+                        href="developer-office-hours/client/index.html"
+                      >
+                        Pay with Card
+                      </a>
+
+                      <a
+                      type="button"
+                      class="font-display text-sm font-semibold text-accent"
+                      href="developer-office-hours/client/index.html"
+                    >
+                      Pay with Crypto
+                    </a>
                         <div class="flex items-center space-x-1">
                           <span
                             class="js-likes relative cursor-pointer before:absolute before:h-4 before:w-4 before:bg-[url('../img/heart-fill.svg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-0"
