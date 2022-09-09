@@ -859,7 +859,7 @@ async function refreshAccountData() {
 
 async function mintEdition(edition, price) {
   const web3 = new Web3(provider);
-  const contract = new web3.eth.Contract(abi.abi, "0xbb4ee7354DfbB0255a9819f8dd0fF64d5Eb03BDB");
+  const contract = new web3.eth.Contract(abi.abi, "0x7a06B84AC9A194e8601850345ac098e512E16a00");
   await contract.methods.mintEdition(edition).send({from: selectedAccount, value: price, mintEdition: edition}).on("receipt", (receipt) => {
     console.log("done");
   });
