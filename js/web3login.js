@@ -796,7 +796,8 @@ async function fetchAccountData() {
   // MetaMask does not give you all accounts, only the selected account
   console.log("Got accounts", accounts);
   selectedAccount = accounts[0];
-
+  document.querySelector("#address-field").style.display = "block";
+  document.querySelector("#address-field").textContent = "Connected with " + selectedAccount.substring(0, 6) + "..." + selectedAccount.substring(selectedAccount.length - 4);
   // document.querySelector("account-string").textContent = selectedAccount;
   // document.querySelector("#selected-account").textContent = selectedAccount;
 
@@ -858,11 +859,16 @@ async function refreshAccountData() {
 }
 
 async function mintEdition(edition, price) {
-  const web3 = new Web3(provider);
-  const contract = new web3.eth.Contract(abi.abi, "0x7a06B84AC9A194e8601850345ac098e512E16a00");
-  await contract.methods.mintEdition(edition).send({from: selectedAccount, value: price, mintEdition: edition}).on("receipt", (receipt) => {
-    console.log("done");
-  });
+    try {
+        const web3 = new Web3(provider);
+        const contract = new web3.eth.Contract(abi.abi, "0x7a06B84AC9A194e8601850345ac098e512E16a00");
+        await contract.methods.mintEdition(edition).send({from: selectedAccount, value: price, mintEdition: edition}).on("receipt", (receipt) => {
+          console.log("done");
+        });
+    } catch {
+        window.alert("Make sure your wallet is connected and you have enough eth to mint!")
+    }
+  
 }
 
 
@@ -958,4 +964,6 @@ window.addEventListener('load', async () => {
   document.querySelector("#playoffs-mint").addEventListener("click", onMintPlayoffs);
   document.querySelector("#conference-mint").addEventListener("click", onMintConference);
   document.querySelector("#sb-mint").addEventListener("click", onMintSuperBowl);
+  document.querySelector("#address-field").style.display = "none";
+  
 });
