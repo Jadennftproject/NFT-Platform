@@ -857,10 +857,10 @@ async function refreshAccountData() {
   // document.querySelector("#btn-connect").removeAttribute("disabled")
 }
 
-async function onMint() {
+async function mintEdition(edition, price) {
   const web3 = new Web3(provider);
-  const contract = new web3.eth.Contract(abi.abi, "0x82465122558e59ccFC401A162cCba8B0c7A9cfEd");
-  await contract.methods.mintEdition(1).send({from: selectedAccount, value: 10000000000000000, mintEdition: 1}).on("receipt", (receipt) => {
+  const contract = new web3.eth.Contract(abi.abi, "0xbb4ee7354DfbB0255a9819f8dd0fF64d5Eb03BDB");
+  await contract.methods.mintEdition(edition).send({from: selectedAccount, value: price, mintEdition: edition}).on("receipt", (receipt) => {
     console.log("done");
   });
 }
@@ -896,7 +896,27 @@ async function onConnect() {
 
   await refreshAccountData();
   document.querySelector("#btn-connect").style.display = "none";
-  document.querySelector("#btn-mint").style.display = "inline";
+  // document.querySelector("#btn-mint").style.display = "inline";
+}
+
+async function onMintSeason() {
+    mintEdition(1, 40000000000000000);
+    console.log("season mint")
+}
+
+async function onMintPlayoffs() {
+    mintEdition(2, 70000000000000000);
+    console.log("playoffs mint")
+}
+
+async function onMintConference() {
+    mintEdition(3, 300000000000000000);
+    console.log("conference mint")
+}
+
+async function onMintSuperBowl() {
+    mintEdition(4, 6000000000000000000);
+    console.log("sb mint")
 }
 
 /**
@@ -932,7 +952,10 @@ console.log('here')
 window.addEventListener('load', async () => {
   init();
   document.querySelector("#btn-connect").addEventListener("click", onConnect);
-  document.querySelector("#btn-mint").addEventListener("click", onMint);
-  document.querySelector("#btn-mint").style.display = "none";
-  // document.querySelector("#btn-disconnect").addEventListener("click", onDisconnect);
+//   document.querySelector("#btn-mint").addEventListener("click", onMint);
+//   document.querySelector("#btn-mint").style.display = "none";
+  document.querySelector("#regular-season-mint").addEventListener("click", onMintSeason);
+  document.querySelector("#playoffs-mint").addEventListener("click", onMintPlayoffs);
+  document.querySelector("#conference-mint").addEventListener("click", onMintConference);
+  document.querySelector("#sb-mint").addEventListener("click", onMintSuperBowl);
 });
