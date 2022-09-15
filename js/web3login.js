@@ -797,7 +797,8 @@ async function fetchAccountData() {
   console.log("Got accounts", accounts);
   selectedAccount = accounts[0];
   document.querySelector("#address-field").style.display = "block";
-  document.querySelector("#address-field").textContent = "Connected with " + selectedAccount.substring(0, 6) + "..." + selectedAccount.substring(selectedAccount.length - 4);
+  document.querySelector("#address-field").textContent = "Mint with " + selectedAccount.substring(0, 6) + "..." + selectedAccount.substring(selectedAccount.length - 4);
+  document.querySelector("#address-field").addEventListener("click", onMintPresale);
   // document.querySelector("account-string").textContent = selectedAccount;
   // document.querySelector("#selected-account").textContent = selectedAccount;
 
@@ -925,6 +926,11 @@ async function onMintSuperBowl() {
     console.log("sb mint")
 }
 
+async function onMintPresale() {
+    mintEdition(5, 60000000000000000);
+    console.log("presale mint")
+}
+
 /**
  * Disconnect wallet button pressed.
  */
@@ -960,10 +966,10 @@ window.addEventListener('load', async () => {
   document.querySelector("#btn-connect").addEventListener("click", onConnect);
 //   document.querySelector("#btn-mint").addEventListener("click", onMint);
 //   document.querySelector("#btn-mint").style.display = "none";
-  document.querySelector("#regular-season-mint").addEventListener("click", onMintSeason);
-  document.querySelector("#playoffs-mint").addEventListener("click", onMintPlayoffs);
-  document.querySelector("#conference-mint").addEventListener("click", onMintConference);
-  document.querySelector("#sb-mint").addEventListener("click", onMintSuperBowl);
+  // document.querySelector("#regular-season-mint").addEventListener("click", onMintSeason);
+  // document.querySelector("#playoffs-mint").addEventListener("click", onMintPlayoffs);
+  // document.querySelector("#conference-mint").addEventListener("click", onMintConference);
+  // document.querySelector("#sb-mint").addEventListener("click", onMintSuperBowl);
   document.querySelector("#address-field").style.display = "none";
   
 });
